@@ -1,0 +1,35 @@
+pipeline{
+
+agent{
+    node{
+        label "${AGENT_LABEL}"
+    }
+}
+
+parameters{
+    string name: 'agent', defaultValue: "Name of node",     description: "agent description"
+}
+environment{
+    USER="rinkush"
+}
+
+stages{
+stage('S1 : test'){
+when{
+
+}
+steps{
+    sh '''
+        hostname
+    ''''
+}
+
+    
+}
+
+
+
+}
+
+
+}
