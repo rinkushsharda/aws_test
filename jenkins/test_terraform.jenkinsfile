@@ -7,16 +7,18 @@ agent{
 }
 
 parameters{
-    string name: 'agent', defaultValue: "Name of node",     description: "agent description"
+    //string name: 'agent', defaultValue: "ec2-jenkins",     description: "agent description"
+    choice name: 'agent', defaultValue: "ec2-jenkins",description: "worker node"
+    choice name: 'action', defaultValue: "install"
 }
 environment{
     USER="rinkush"
 }
 
 stages{
-stage('S1 : test'){
+stage('Stage : install'){
 when{
-    expression { params.USER == "rinkush" }
+    expression { params.action == "install" }
 }
 steps{
     sh '''
