@@ -2,5 +2,4 @@
 git status
 git add --all
 git commit -m "commitscript"
-git push origin main
-echo "rinku.neo@gmail.com"
+echo "rinku.neo@gmail.com"|git push origin main
