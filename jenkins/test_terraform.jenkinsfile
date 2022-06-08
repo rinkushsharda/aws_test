@@ -9,7 +9,7 @@ agent{
 parameters{
     //string name: 'agent', defaultValue: "ec2-jenkins",     description: "agent description"
     choice name: 'agent', choices: ['ec2-jenkins'],description: "worker node"
-    choice name: 'action', chpices: ['install'], description: "Install"
+    choice name: 'action', choices: ['install'], description: "Install"
 }
 environment{
     USER="rinkush"
