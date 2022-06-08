@@ -2,5 +2,5 @@
 git status
 git add --all
 git commit -m "commitscript"
-echo "rinku.neo@gmail.com"|git status
+echo "rinku.neo@gmail.com"| hostname
 
