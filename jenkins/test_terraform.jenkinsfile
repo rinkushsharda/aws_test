@@ -16,7 +16,7 @@ environment{
 stages{
 stage('S1 : test'){
 when{
-
+    expression { params.USER == "rinkush" }
 }
 steps{
     sh '''
